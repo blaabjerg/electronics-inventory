@@ -96,6 +96,12 @@
 - Qty: 2
 - Notes: Dual H-bridge, 2A per channel, up to 46V motor supply. Drives 2× DC motors or 1× stepper. Onboard 5V regulator (active when motor supply >7V — jumper to disable for high-voltage use). Logic 5V. Inefficient at low voltages due to ~2V dropout per channel — consider DRV8833/TB6612 for small 3.7V-fed DC motors.
 
+## INA226 current/power monitor breakout
+
+- Package: small breakout board, 0.1" headers
+- Qty: 2
+- Notes: I²C, 16-bit resolution. Shunt resistor R100 (0.1Ω). Superior to INA219 — higher resolution, better accuracy, plus an alert/limit pin useful for overcurrent interrupts. I²C address configurable via A0/A1 pads (0x40–0x4F). Directly relevant to Argus Electrons node design.
+
 ## INA219 current/power monitor breakout
 
 - Package: small breakout board, 0.1" headers
