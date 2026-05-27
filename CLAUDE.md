@@ -4,16 +4,16 @@ This vault tracks Joachim's bench electronics components. Claude is both the pri
 
 ## Category files
 
-One markdown file per category, at vault root:
+One markdown file per category, in the `inventory/` subfolder:
 
-- `passives.md` — resistors, capacitors, inductors, crystals, ferrite beads
-- `semiconductors-discrete.md` — diodes, transistors, MOSFETs, triacs, optocouplers
-- `ics.md` — logic, op-amps, regulators, microcontrollers, drivers, comms ICs
-- `sensors-modules.md` — sensor breakouts, display modules, radio modules, dev boards
-- `electromechanical.md` — relays, switches, fans, motors, buzzers, fuses
-- `connectors.md` — pin headers, JST, Dupont, terminal blocks, USB, barrel jacks
-- `power.md` — batteries, buck/boost converters, LDOs, charger modules, anything power-supply-related
-- `misc.md` — anything that doesn't fit cleanly above; propose a new category if a misc entry grows
+- `inventory/passives.md` — resistors, capacitors, inductors, crystals, ferrite beads
+- `inventory/semiconductors-discrete.md` — diodes, transistors, MOSFETs, triacs, optocouplers
+- `inventory/ics.md` — logic, op-amps, regulators, microcontrollers, drivers, comms ICs
+- `inventory/sensors-modules.md` — sensor breakouts, display modules, radio modules, dev boards
+- `inventory/electromechanical.md` — relays, switches, fans, motors, buzzers, fuses
+- `inventory/connectors.md` — pin headers, JST, Dupont, terminal blocks, USB, barrel jacks
+- `inventory/power.md` — batteries, buck/boost converters, LDOs, charger modules, anything power-supply-related
+- `inventory/misc.md` — anything that doesn't fit cleanly above; propose a new category if a misc entry grows
 
 New categories can be proposed and added as the collection grows.
 

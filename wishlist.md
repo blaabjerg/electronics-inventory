@@ -14,8 +14,8 @@ Items called out in the official Kit 1 (Sections 1–3) and Kit 2 (Sections 4–
 - **9V battery + snap connector** — needed for early experiments. Not currently stocked.
 - **Full-size panel-mount potentiometers** — the RM065 trimmers are there, but Platt uses full-size rotary pots (10KΩ, 100KΩ). Aliexpress knurled-shaft type is fine.
 - **5×20mm glass fuses** — the inventory has 3.6×10mm slow-blow fuses; Platt specifies 5×20mm fast-blow (1A, 3A). Verify fit in any fuse holder before assuming they're interchangeable.
-- **Hookup wire** — 22AWG solid-core in multiple colors. Not listed in inventory. Essential for breadboard work.
-- **Alligator clip test leads** — not listed.
+- **Hookup wire** — ✅ in stock
+- **Alligator clip test leads** — ✅ in stock
 
 ### Kit 2 / Sections 4–5
 
@@ -57,7 +57,7 @@ Beyond Platt — things a rounded hobbyist kit typically includes.
 - **DS3231 RTC module** — real-time clock with battery backup, I²C. Extremely useful for any datalogging project. 1–2 pcs.
 - **DHT22 (or SHT31) temperature/humidity** — none listed. DHT22 is cheap and adequate; SHT31 is better but pricier.
 - **HC-SR04 ultrasonic distance sensor** — common, cheap, useful for ranging experiments.
-- **Buzzer — active (5V)** — none in stock. Active buzzer requires only a GPIO high; passive requires PWM for tone control. Get both types.
+- **Buzzer — active (5V)** — ✅ in stock. Passive buzzer (PWM-driven for tone control) still worth adding.
 - **Rotary encoder with pushbutton** — not in stock. Very useful for UI input on embedded projects.
 - **Servo motor (SG90 or MG90S)** — not in stock. Covers basic PWM/actuator experiments.
 
@@ -72,3 +72,5 @@ Beyond Platt — things a rounded hobbyist kit typically includes.
 ## On order / incoming
 
 - MAX3485 RS-485 transceivers (3.3V logic, drop-in RS-485 for ESP32 nodes)
+- PC817 optocouplers — bare chips + breakout boards for prototyping
+- Additional op-amps (TBD)
