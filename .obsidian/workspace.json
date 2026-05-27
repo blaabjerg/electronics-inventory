@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "sensors-modules.md",
+                "file": "semiconductors-discrete.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "sensors-modules"
+              "title": "semiconductors-discrete"
             }
           }
         ]
@@ -202,6 +202,19 @@
   },
   "active": "2a7ee8e7990c2cf7",
   "lastOpenFiles": [
+    "wishlist.md",
+    "wishlist.md.tmp.1291373.1d34621d3789",
+    "semiconductors-discrete.md.tmp.1291373.d36c8c4587e0",
+    "power.md",
+    "passives.md",
+    "ics.md",
+    "sensors-modules.md",
+    "semiconductors-discrete.md",
+    "README.md",
+    "electromechanical.md",
+    "connectors.md",
+    "CLAUDE.md",
+    "CHANGELOG.md",
     "passives.md.tmp.1279475.9b40b42916ac",
     "electromechanical.md.tmp.1279475.51a730e76857",
     "connectors.md.tmp.1279475.fc5eb758c329",
@@ -209,20 +222,7 @@
     "sensors-modules.md.tmp.1279475.c7c458845a19",
     "sensors-modules.md.tmp.1270325.23c0bfb8d287",
     "electromechanical.md.tmp.1270325.547bf5b8ebe3",
-    "semiconductors-discrete.md",
-    "README.md",
-    "power.md",
     "sensors-modules.md.tmp.1270325.9d47f13bec11",
-    "passives.md",
-    "sensors-modules.md.tmp.1255768.d94e6d0e7bb8",
-    "sensors-modules.md.tmp.1255768.7654aba996fb",
-    "sensors-modules.md.tmp.1255768.1d3ac34251e2",
-    "sensors-modules.md",
-    "ics.md",
-    "electromechanical.md",
-    "connectors.md",
-    "Welcome.md",
-    "CHANGELOG.md",
-    "CLAUDE.md"
+    "Welcome.md"
   ]
 }

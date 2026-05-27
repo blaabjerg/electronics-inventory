@@ -21,6 +21,18 @@
   - S8550 (PNP), S9015 (PNP), 2N5401 (PNP), 2N3906 (PNP), A1015 (PNP), A92 (PNP), A733 (PNP)
 - Notes: General-purpose small-signal transistors. Aliexpress assortment — verify markings against datasheet before use in critical applications.
 
+## IR LED — 5mm 940nm
+
+- Package: 5mm through-hole
+- Qty: ~10
+- Notes: 940nm emitter, pairs with VS1838B receiver (38kHz modulated). From IR kit assortment.
+
+## VS1838B IR receiver module
+
+- Package: through-hole, transistor-style (3-leg)
+- Qty: ~10
+- Notes: Demodulating IR receiver, 38kHz carrier, active-low output. 2.7–5.5V supply. Pairs with 940nm emitter above. Use for remote control reception — not a raw phototransistor, output is already decoded.
+
 ## Diodes
 
 ### 1N4148
