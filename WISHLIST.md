@@ -10,7 +10,7 @@ Items called out in the official Kit 1 (Sections 1–3) and Kit 2 (Sections 4–
 
 ### Kit 1 / Sections 1–3
 
-- **9V relay, DPDT, PCB mount** — the book uses a relay as a core component in several experiments. Get a 9V coil DPDT type (same as Platt recommends). ~2–3 pcs.
+- **Omron G5V-2-H1 DC9 relay** — DPDT, 9V coil, DIP-8 footprint (breadboard-compatible). This is the relay Platt uses. Source from DigiKey or Mouser — Aliexpress only sells in quantities of 10+. 2–3 pcs is enough.
 - **9V battery + snap connector** — needed for early experiments. Not currently stocked.
 - **Full-size panel-mount potentiometers** — the RM065 trimmers are there, but Platt uses full-size rotary pots (10KΩ, 100KΩ). Aliexpress knurled-shaft type is fine.
 - **5×20mm glass fuses** — the inventory has 3.6×10mm slow-blow fuses; Platt specifies 5×20mm fast-blow (1A, 3A). Verify fit in any fuse holder before assuming they're interchangeable.
@@ -63,7 +63,7 @@ Beyond Platt — things a rounded hobbyist kit typically includes.
 
 ### Electromechanical / power
 
-- **5V relay module** — the L298N drives motors; nothing drives a relay from ESP32 logic directly. A small optocoupler-isolated relay module (1- or 2-channel, 5V coil) covers mains-adjacent switching safely.
+- **5V relay modules** — for driving from ESP32 GPIO. SRD-05VDC-SL-C is the bare relay (SPDT); the ready-made 1- or 2-channel relay modules with transistor driver and flyback diode are more convenient for prototyping. Aliexpress, cheap. Get a few.
 - **Step-up (boost) converter module** — the Mini360 is step-down only. A small MT3608-based boost module covers 3.7V LiPo → 5V and similar.
 - **LiPo battery for bench use** — the 523450 cells have connectors; consider a dedicated bench LiPo with a standard PH2.0 or XT30 connector for powering projects during development.
 
