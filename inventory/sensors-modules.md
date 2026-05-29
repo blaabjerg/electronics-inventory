@@ -28,7 +28,7 @@
 
 - Package: TO-92 (3-leg), through-hole
 - Qty: 1
-- Notes: Dallas/Maxim 1-Wire digital temperature sensor. -55°C to +125°C, ±0.5°C accuracy (-10 to +85°C range). 9–12 bit resolution, programmable. Parasitic power mode supported. Marking: "Dallas 18B20 2342C4 +817AB". Scarce — treat as critical stock. Note: also used in the Serenity Now! Argus project for battery/engine bay temperature monitoring.
+- Notes: Dallas/Maxim 1-Wire digital temperature sensor. -55°C to +125°C, ±0.5°C accuracy (-10 to +85°C range). 9–12 bit resolution, programmable. Parasitic power mode supported. Marking: "Dallas 18B20 2342C4 +817AB". Scarce — treat as critical stock. Earmarked for Serenity Now! Argus Environment node — water temperature probe (hull-mounted, below waterline).
 
 ## ESP8266 — NodeMCU Amica v2
 
@@ -39,8 +39,14 @@
 ## ESP32-S3 N16R8 — dev board
 
 - Package: full dev board with headers and USB connectors
-- Qty: 1
-- Notes: Dual-core Xtensa LX7 240MHz, 16MB flash, 8MB PSRAM (N16R8). WiFi + BT5/BLE, USB OTG. The R8 PSRAM makes this well-suited for camera, audio, or anything needing a large working buffer. Most capable chip on the bench alongside the XIAO Sense.
+- Qty: 1 — ⚠️ in repair bin
+- Notes: Dual-core Xtensa LX7 240MHz, 16MB flash, 8MB PSRAM (N16R8). WiFi + BT5/BLE, USB OTG. Faulty CH343P USB-UART bridge — needs SMD rework (hot air). See REPAIR-BIN.md.
+
+## ESP32-C6-N16
+
+- Package: dev board
+- Qty: 2
+- Notes: Single-core RISC-V 160MHz, 16MB flash. WiFi 6 (802.11ax), BLE 5, Thread/Zigbee (802.15.4). The 802.15.4 radio makes this the only board on the bench capable of Thread/Zigbee — relevant if mesh networking or Matter comes up. Newer chip, ecosystem still maturing vs C3/S3.
 
 ## ESP32-C3 SuperMini — HW-466AB (black)
 

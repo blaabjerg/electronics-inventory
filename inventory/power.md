@@ -12,6 +12,12 @@
 - Qty: 2
 - Notes: Aliexpress, 3.7V nominal, 1000mAh, 5.2×34×50mm. PH 2.0 (2-pin). Not for critical applications. Charge with TP4056 module or equivalent — do not exceed 4.2V.
 
+## MB102 breadboard power supply module
+
+- Package: breadboard-mount module, barrel jack + USB input
+- Qty: 1 — ⚠️ in repair bin
+- Notes: Switchable 3.3V/5V output, designed to plug into breadboard power rails. Faulty AMS1117C LDO — needs replacement. See REPAIR-BIN.md.
+
 ## Mini360 buck converter modules
 
 - Package: bare module, ~17×11mm
