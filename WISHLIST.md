@@ -61,6 +61,10 @@ Beyond Platt — things a rounded hobbyist kit typically includes.
 - **Rotary encoder with pushbutton** — not in stock. Very useful for UI input on embedded projects.
 - **Servo motor (SG90 or MG90S)** — not in stock. Covers basic PWM/actuator experiments.
 
+### Comms modules
+
+- **Opto-isolated RS-485 modules** — replacement for the non-isolated MAX485 breakouts. Look for modules with a built-in isolation barrier (e.g. based on ADM2483, or MAX485 + ADUM1201 combo boards). Prevents ground loop and backfeed issues. Relevant for any Argus node where RS-485 bus ground and device ground may differ (engine bay sensor, external nodes).
+
 ### Electromechanical / power
 
 - **5V relay modules** — for driving from ESP32 GPIO. SRD-05VDC-SL-C is the bare relay (SPDT); the ready-made 1- or 2-channel relay modules with transistor driver and flyback diode are more convenient for prototyping. Aliexpress, cheap. Get a few.

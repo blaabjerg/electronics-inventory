@@ -14,8 +14,9 @@ Components and modules awaiting repair. Each entry notes the fault, what's neede
 ## MAX485 breakout module
 
 - **Fault:** Suspected dead — power backfed through the module
-- **Fix:** Replace MAX485 IC (SO-8). May also be worth checking the PCB traces for damage before bothering.
-- **Blocker:** None if traces are intact; hot air or fine iron for SO-8
+- **Fix:** Replace MAX485 IC (SO-8). Check PCB traces for damage first — backfeed events can lift pads.
+- **Blocker:** None if traces are intact; SO-8 is a reasonable first SMD rework exercise
+- **Note:** Boards will be replaced with opto-isolated modules going forward. This repair is for diagnostics/rework practice, not production use.
 - **Inventory ref:** sensors-modules.md (qty updated to 4)
 
 ## MB102 breadboard power supply module
