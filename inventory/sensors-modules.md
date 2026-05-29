@@ -75,7 +75,7 @@
 ## MAX485 RS-485 transceiver breakout
 
 - Package: small breakout board, 0.1" headers
-- Qty: 5
+- Qty: 4 (1 in repair bin)
 - Notes: MAX485 is a 5V half-duplex RS-485/RS-422 transceiver. 2.5Mbps max. Breakout provides DE/RE pins for direction control. Note: MAX485 logic levels are 5V — not directly 3.3V compatible without level shifting. MAX3485 (3.3V version, on order) is the better choice for ESP32 nodes. Keep MAX485 for 5V bus masters or where level shifting is already present.
 
 ## Microphone module — omnidirectional, small round
