@@ -65,6 +65,7 @@
 - Package: compact dev board with integrated display
 - Qty: 1
 - Notes: ESP32-C3 with integrated 0.42" OLED (72×40px typically, I²C). Unusual display size — library support is narrower than SSD1306 0.96". Good for small status displays where a dedicated display board is too bulky.
+- Note from seller: "**This screen is different from Other 0.42 -inch screen. The starting point of the screen is 12864 (13, 14)**"
 
 ## Seeed XIAO ESP32-S3 Sense
 
