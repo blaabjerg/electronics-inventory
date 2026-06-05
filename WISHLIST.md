@@ -4,6 +4,31 @@ Component gaps identified against current inventory. Organized by priority.
 
 ---
 
+## Mouser order (VOEC — fee-free into Norway)
+
+Mouser is VOEC-registered: 25% MVA collected at checkout, no *fortollingsgebyr* on orders under 3000 NOK. Use it for parts where genuine silicon and known-good quality matter more than AliExpress pricing — especially anything on the always-on Argus path, which has to survive months unattended in a marine environment.
+
+### Argus — committed parts
+
+- **Traco TSR 1-2433** — 12V→3.3V switching regulator, SIP-3, one per ESP32-C6 node (Nav, Environment, Engine, Electrons). Standardised buck for all nodes (Argus decisions, 2026-06-05). Buy **~6** (4 in use + 2 spares).
+- **Traco TMR 2-2411WI** — 9–36V in → isolated 5V/400mA, 1.5kVDC. Field-side supply for the MPPT VE.Direct digital-isolator link on the Electrons node. Buy **2** (1 + spare).
+
+### Suggested — quality-critical
+
+Parts where an AliExpress clone/fake is a known reliability or accuracy risk, and where a marine always-on system can't afford a silent failure:
+
+- **Genuine MORNSUN B0505XT-1WR3** (×2–3) — the opto-isolated RS-485 boards were sourced cheap; a couple of genuine isolated bricks as known-good references to validate the AliExpress boards' real idle current against datasheet (ties to Argus NFR-6.1).
+- **Digital isolators** — ADuM1201 / TI ISO7221 / Skyworks Si8621 for the VE.Direct isolation. Relabels are common on AliExpress and this sits on the safety-critical telemetry path. ~3–5 pcs, genuine.
+- **Genuine Bosch BME688** (×3) — the Environment node sensor array. AliExpress "BME680/688" modules are frequently BMP280 relabels or uncalibrated; for a sensor whose whole value is calibrated output, buy genuine (Bosch via Mouser, or an Adafruit/Pimoroni breakout).
+- **Genuine BNO085 breakout** — the Tenstar AliExpress board just arrived; a genuine-silicon spare (Adafruit/SparkFun) de-risks the Nav node if the clone turns out to be a relabelled BNO055.
+- **Quality electrolytic / polymer caps, ≥25V** — Panasonic FC/FR, Nichicon, or Würth, for the raw-battery rail (can hit 14.6V absorption; the ≥25V rule is in the Argus power decision). AliExpress electrolytics are the single most common bench-reliability problem — worth doing right on the always-on rail.
+- **TVS / transient protection** — SMBJ or P6KE series sized for the 12V house rail (load-dump / alternator transients are real on a boat). Genuine part, correct standoff voltage.
+- **v2-PCB regulator ICs (optional, future)** — Renesas RAA211403 or TI LM5165, the integrated buck planned for the v2 board. Worth grabbing a few while an order is open, even if the PCB is months out.
+
+> Open question: pull the **SN65HVD75** as a bare IC too (for the eventual v2 isolated-RS485 board), or keep relying on the AliExpress opto boards through bench bring-up? Flagging rather than assuming.
+
+---
+
 ## Make: Electronics 3rd ed. (Platt) — specific gaps
 
 Items called out in the official Kit 1 (Sections 1–3) and Kit 2 (Sections 4–5) that aren't in stock.
@@ -41,7 +66,7 @@ Beyond Platt — things a rounded hobbyist kit typically includes.
 ### Semiconductors
 
 - **Logic-level MOSFETs** — nothing in stock for power switching from 3.3V/5V logic. IRLZ44N (N-ch, TO-220, Vgs(th) ~2V) and AO3400 (N-ch, SOT-23) cover most use cases. Also 2N7000 (TO-92) for small-signal work.
-- **Optocouplers** — PC817 or 4N35. None in stock. Important for isolating ESP32/logic from mains-adjacent or high-voltage circuits. Already implicitly needed for the Orion-Tr remote control in the Argus project (optocoupler spec'd but not procured for bench use).
+- **Optocouplers** — ✅ in stock (PC817 ×~30 + a 2-channel PC817 board, 2026-06-05). Covers the Argus Orion-Tr remote-enable opto and general isolation.
 - **Schottky diodes (more variety)** — 1N5819/1N5822 are already stocked; add BAT43 or BAT85 (small SOD-80/DO-35 package) for signal-level work.
 
 ### ICs
@@ -75,6 +100,8 @@ Beyond Platt — things a rounded hobbyist kit typically includes.
 
 ## On order / incoming
 
-- MAX3485 RS-485 transceivers (3.3V logic, drop-in RS-485 for ESP32 nodes)
-- PC817 optocouplers — bare chips + breakout boards for prototyping
-- Additional op-amps (TBD)
+- ✅ MAX3485 RS-485 transceivers — arrived 2026-06-05 (5× modules, in sensors-modules.md)
+- ✅ PC817 optocouplers — arrived 2026-06-05 (bare chips + 2-channel board)
+- ✅ Op-amp / IC haul — arrived 2026-06-05 (LM324, LM393, UA741, NE5532, LM386, ULN2003, ULN2803, more LM358/NE555)
+
+_Nothing currently outstanding on order. Next planned buy is the Mouser order above._

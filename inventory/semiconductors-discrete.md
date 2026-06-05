@@ -88,3 +88,9 @@
 - Package: DO-7 (glass), through-hole
 - Qty: 2
 - Notes: Germanium point-contact diode. Scarce — treat as critical stock.
+
+## Optocouplers — PC817
+
+- Package: DIP-4, through-hole
+- Qty: ~30
+- Notes: Single-channel phototransistor optocoupler. ~5 kV isolation, CTR 50–600%. Standard part for isolating logic from mains-adjacent or differently-referenced circuits. Earmarked use: Argus Orion-Tr remote-enable opto on the Electrons node. A 2-channel PC817 breakout board is also in stock (see sensors-modules.md).

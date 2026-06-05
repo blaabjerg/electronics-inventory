@@ -2,6 +2,14 @@
 
 Changes to the inventory after initial population are logged here. The initial population session is not logged — the category files themselves are the record of that.
 
+## 2026-06-05 — AliExpress haul (ICs, optos, MAX3485, BNO085)
+- Added: ICs — LM324 (~5), LM393 (~10), UA741 (~10), NE5532 (~10), LM386 (~10), ULN2003 (~5), ULN2803 (~5)
+- Added: PC817 optocouplers ×~30 to semiconductors-discrete.md; 2-channel PC817 board to sensors-modules.md
+- Added: 5× MAX3485 RS-485 transceiver modules and 1× Tenstar BNO085 IMU board to sensors-modules.md
+- Updated: NE555 qty 2→~12, LM358 qty 2→~12 (10 each from this batch)
+- Updated: MAX485 note (MAX3485 now in stock, not "on order")
+- Updated: WISHLIST.md — added "Mouser order" category (Traco TSR 1-2433, TMR 2-2411WI + quality-critical suggestions); marked optocouplers ✅; cleared "On order / incoming"
+
 ## 2026-05-29 — MAX485 to repair bin
 - Updated: MAX485 qty 5→4; 1 unit moved to repair bin (suspected dead, power backfeed)
 

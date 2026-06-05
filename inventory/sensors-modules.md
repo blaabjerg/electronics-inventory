@@ -77,7 +77,25 @@
 
 - Package: small breakout board, 0.1" headers
 - Qty: 4 (1 in repair bin)
-- Notes: MAX485 is a 5V half-duplex RS-485/RS-422 transceiver. 2.5Mbps max. Breakout provides DE/RE pins for direction control. Note: MAX485 logic levels are 5V — not directly 3.3V compatible without level shifting. MAX3485 (3.3V version, on order) is the better choice for ESP32 nodes. Keep MAX485 for 5V bus masters or where level shifting is already present.
+- Notes: MAX485 is a 5V half-duplex RS-485/RS-422 transceiver. 2.5Mbps max. Breakout provides DE/RE pins for direction control. Note: MAX485 logic levels are 5V — not directly 3.3V compatible without level shifting. MAX3485 (3.3V version, now in stock — see below) is the better choice for ESP32 nodes. Keep MAX485 for 5V bus masters or where level shifting is already present.
+
+## MAX3485 RS-485 transceiver module
+
+- Package: small breakout board, 0.1" headers
+- Qty: ~5
+- Notes: 3.3V half-duplex RS-485 transceiver with DE/RE direction pins. The 3.3V-logic counterpart to the MAX485 above — directly ESP32-compatible, no level shifting. Non-isolated. Context for Argus: the production RS-485 bus standardised on opto-isolated auto-direction boards (SN65HVD75 + B0505XT-1WR3) for ground-loop/backfeed protection, so these MAX3485 modules are bench/non-isolated use rather than the deployed bus parts.
+
+## Optocoupler board — PC817, 2-channel
+
+- Package: breakout board, 0.1" headers
+- Qty: 1
+- Notes: Two PC817 optocouplers on one board with input current-limit resistors and output pull-ups/headers. For isolating two logic signals (e.g. ESP32 GPIO ↔ a differently-referenced or higher-voltage domain). Bare PC817 chips also in stock (see semiconductors-discrete.md).
+
+## BNO085 IMU board — Tenstar
+
+- Package: breakout board, 0.1" headers
+- Qty: 1
+- Notes: 9-DOF IMU with onboard sensor-fusion (CEVA/Hillcrest SH-2 firmware) — outputs absolute orientation/quaternion directly, offloading fusion from the MCU. I²C/SPI/UART-RVC. 3.3V. Earmarked for the Serenity Now! Argus Nav node (vessel attitude/heading). Tenstar (AliExpress) board — verify it's a genuine BNO085 vs a BNO055/relabel before committing to the Nav design; a genuine-silicon spare from a reputable distributor is on the Mouser suggestions list.
 
 ## Microphone module — omnidirectional, small round
 
