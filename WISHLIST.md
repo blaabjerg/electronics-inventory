@@ -12,6 +12,7 @@ Mouser is VOEC-registered: 25% MVA collected at checkout, no *fortollingsgebyr* 
 
 - **Traco TSR 1-2433** — 12V→3.3V switching regulator, SIP-3, one per ESP32-C6 node (Nav, Environment, Engine, Electrons). Standardised buck for all nodes (Argus decisions, 2026-06-05). Buy **~6** (4 in use + 2 spares).
 - **Traco TMR 2-2411WI** — 9–36V in → isolated 5V/400mA, 1.5kVDC. Field-side supply for the MPPT VE.Direct digital-isolator link on the Electrons node. Buy **2** (1 + spare).
+- **Mean Well DDR-15G-5** — 9–18V in → 5V/3A (15W), DIN-rail. Central-enclosure DC-DC #1 (internal 5V rail: Nexus + 18650 charging + e-ink + LEDs + internal sensors). Already spec'd in `central-enclosure.md`. Buy **1–2**. Note: 18V input ceiling — depends on the rail TVS clamp (below) to survive load-dump transients above 18V.
 
 ### Suggested — quality-critical
 
@@ -25,7 +26,7 @@ Parts where an AliExpress clone/fake is a known reliability or accuracy risk, an
 - **TVS / transient protection** — SMBJ or P6KE series sized for the 12V house rail (load-dump / alternator transients are real on a boat). Genuine part, correct standoff voltage.
 - **v2-PCB regulator ICs (optional, future)** — Renesas RAA211403 or TI LM5165, the integrated buck planned for the v2 board. Worth grabbing a few while an order is open, even if the PCB is months out.
 
-> Open question: pull the **SN65HVD75** as a bare IC too (for the eventual v2 isolated-RS485 board), or keep relying on the AliExpress opto boards through bench bring-up? Flagging rather than assuming.
+> **SN65HVD75 bare ICs — decided: skip.** Staying on the AliExpress opto modules through bench bring-up; the eventual v2 isolated-RS485 board will be ordered pre-populated (no hand-assembly of fine-pitch parts).
 
 ---
 
