@@ -10,6 +10,9 @@ Changes to the inventory after initial population are logged here. The initial p
 - Updated: MAX485 note (MAX3485 now in stock, not "on order")
 - Updated: WISHLIST.md — added "Mouser order" category (Traco TSR 1-2433, TMR 2-2411WI + quality-critical suggestions); marked optocouplers ✅; cleared "On order / incoming"
 
+## 2026-06-05 — BNO085 verified genuine
+- Updated: Tenstar BNO085 board note → verified genuine (I²C 0x4B, SH-2 product-ID handshake OK, streams valid rotation vector). Pi hardware-I²C clock-stretching garbles occasional frames — Pi quirk, not a board fault; use SPI/UART-RVC or an ESP32 for clean streaming.
+
 ## 2026-05-29 — MAX485 to repair bin
 - Updated: MAX485 qty 5→4; 1 unit moved to repair bin (suspected dead, power backfeed)
 

@@ -95,7 +95,7 @@
 
 - Package: breakout board, 0.1" headers
 - Qty: 1
-- Notes: 9-DOF IMU with onboard sensor-fusion (CEVA/Hillcrest SH-2 firmware) — outputs absolute orientation/quaternion directly, offloading fusion from the MCU. I²C/SPI/UART-RVC. 3.3V. Earmarked for the Serenity Now! Argus Nav node (vessel attitude/heading). Tenstar (AliExpress) board — verify it's a genuine BNO085 vs a BNO055/relabel before committing to the Nav design; a genuine-silicon spare from a reputable distributor is on the Mouser suggestions list.
+- Notes: 9-DOF IMU with onboard sensor-fusion (CEVA/Hillcrest SH-2 firmware) — outputs absolute orientation/quaternion directly, offloading fusion from the MCU. I²C/SPI/UART-RVC. 3.3V. Earmarked for the Serenity Now! Argus Nav node (vessel attitude/heading). Tenstar (AliExpress) board — **verified genuine** (2026-06-05): answers at I²C 0x4B (impossible for a BNO055 relabel), passes the SH-2 product-ID handshake on init, and streams a valid fused rotation vector. Tested on a Pi where the hardware-I²C clock-stretching bug garbles occasional frames — a Pi quirk, not a board fault; use SPI or UART-RVC (or an ESP32, whose I²C handles stretching) for clean streaming. Genuine-silicon spare on the Mouser list is now insurance, not a fix.
 
 ## Microphone module — omnidirectional, small round
 
