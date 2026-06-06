@@ -40,7 +40,7 @@
 
 - Package: full dev board with headers and USB connectors
 - Qty: 2 working + 1 ⚠️ in repair bin
-- Notes: Dual-core Xtensa LX7 240MHz, 16MB flash, 8MB PSRAM (N16R8). WiFi + BT5/BLE, native USB OTG on the S3. 2 generic boards added 2026-06-06. The 1 repair-bin unit has a faulty CH343P USB-UART bridge — needs SMD rework (hot air); see REPAIR-BIN.md. (The native USB-OTG path is independent of that bridge, so the repair unit may still be usable over USB-CDC — worth checking before reworking.)
+- Notes: Dual-core Xtensa LX7 240MHz, 16MB flash, 8MB PSRAM (N16R8). WiFi + BT5/BLE, native USB OTG on the S3. 2 generic boards added 2026-06-06. The 1 repair-bin unit has a faulty CH343P USB-UART bridge — confirmed dead: doesn't boot its existing firmware and nothing enumerates on USB-CDC either, so the native-USB fallback is out. Needs SMD rework (hot air). See REPAIR-BIN.md.
 
 ## ESP32-C6-N16
 
