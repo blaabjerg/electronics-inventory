@@ -89,7 +89,7 @@ Beyond Platt — things a rounded hobbyist kit typically includes.
 
 ### Comms modules
 
-- **Opto-isolated RS-485 modules** — replacement for the non-isolated MAX485 breakouts. Look for modules with a built-in isolation barrier (e.g. based on ADM2483, or MAX485 + ADUM1201 combo boards). Prevents ground loop and backfeed issues. Relevant for any Argus node where RS-485 bus ground and device ground may differ (engine bay sensor, external nodes).
+- **Opto-isolated RS-485 modules** — ✅ in stock (2× SN65HVD75 + B0505XT-1WR3 auto-direction boards, 2026-06-06; see sensors-modules.md). Argus needs 5 total (4 nodes + Nexus), so **3 more still wanted** to complete the fleet — same part.
 
 ### Electromechanical / power
 

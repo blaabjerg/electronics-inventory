@@ -36,11 +36,11 @@
 - Qty: 1
 - Notes: WiFi only, Tensilica L106 80MHz (overclockable to 160MHz), 4MB flash, CP2102 USB-UART. 3.3V GPIO, not 5V tolerant. Amica variant uses CP2102 (vs. CH340 on v3 LoLin). Mature ecosystem, limited RAM (~50KB heap usable). Good for simple WiFi nodes.
 
-## ESP32-S3 N16R8 — dev board
+## ESP32-S3-N16R8 — dev board
 
 - Package: full dev board with headers and USB connectors
-- Qty: 1 — ⚠️ in repair bin
-- Notes: Dual-core Xtensa LX7 240MHz, 16MB flash, 8MB PSRAM (N16R8). WiFi + BT5/BLE, USB OTG. Faulty CH343P USB-UART bridge — needs SMD rework (hot air). See REPAIR-BIN.md.
+- Qty: 2 working + 1 ⚠️ in repair bin
+- Notes: Dual-core Xtensa LX7 240MHz, 16MB flash, 8MB PSRAM (N16R8). WiFi + BT5/BLE, native USB OTG on the S3. 2 generic boards added 2026-06-06. The 1 repair-bin unit has a faulty CH343P USB-UART bridge — needs SMD rework (hot air); see REPAIR-BIN.md. (The native USB-OTG path is independent of that bridge, so the repair unit may still be usable over USB-CDC — worth checking before reworking.)
 
 ## ESP32-C6-N16
 
@@ -84,6 +84,12 @@
 - Package: small breakout board, 0.1" headers
 - Qty: ~5
 - Notes: 3.3V half-duplex RS-485 transceiver with DE/RE direction pins. The 3.3V-logic counterpart to the MAX485 above — directly ESP32-compatible, no level shifting. Non-isolated. Context for Argus: the production RS-485 bus standardised on opto-isolated auto-direction boards (SN65HVD75 + B0505XT-1WR3) for ground-loop/backfeed protection, so these MAX3485 modules are bench/non-isolated use rather than the deployed bus parts.
+
+## Opto-isolated TTL–RS-485 transceiver module — SN65HVD75 + B0505XT-1WR3
+
+- Package: breakout board, 4-pin logic header (VIN / TX / RX / GND)
+- Qty: 2
+- Notes: Auto-direction 3.3V RS-485 transceiver (SN65HVD75) with an onboard B0505XT-1WR3 isolated 5V DC-DC giving a galvanically isolated bus side. **No DE/RE pin** — the module toggles the driver itself, freeing a GPIO (eModbus runs without an RTS pin). Datasheet no-load idle ~5 mA typ / 10 mA max at 5V + ~1 mA transceiver ≈ ~3–5 mA at 12V/node through a buck. VIN labelled **3–5V** — validate the isolated rail holds under load at 3.3V before committing. SN65HVD75 common-mode range −7 to +12V. Auto-direction turnaround timing must be validated at 9600 baud (driver hold-off after last bit). **This is the production RS-485 bus transceiver for Serenity Now! Argus** — replaces the non-isolated MAX3485 for ground-loop/backfeed protection. Argus needs 5 (4 nodes + Nexus); 2 on hand.
 
 ## Optocoupler board — PC817, 2-channel
 
