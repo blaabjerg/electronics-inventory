@@ -2,6 +2,10 @@
 
 Changes to the inventory after initial population are logged here. The initial population session is not logged — the category files themselves are the record of that.
 
+## 2026-06-09 — ESP32-C6 board + isolated RS-485 transceivers
+* Added: 1× ESP32-C6-N16 dev board
+* Added: 3× opto-isolated TTL–RS-485 transceiver modules
+
 ## 2026-06-06 — ESP32-S3 boards + isolated RS-485 transceivers
 - Added: 2× generic ESP32-S3-N16R8 dev boards (consolidated into the existing S3-N16R8 entry: now 2 working + 1 repair-bin)
 - Added: 2× opto-isolated TTL–RS-485 transceiver modules (SN65HVD75 + B0505XT-1WR3, auto-direction) to sensors-modules.md — the Argus production bus part

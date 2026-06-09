@@ -10,9 +10,9 @@ Mouser is VOEC-registered: 25% MVA collected at checkout, no *fortollingsgebyr* 
 
 ### Argus — committed parts
 
-- **Traco TSR 1-2433** — 12V→3.3V switching regulator, SIP-3, one per ESP32-C6 node (Nav, Environment, Engine, Electrons). Standardised buck for all nodes (Argus decisions, 2026-06-05). Buy **~6** (4 in use + 2 spares).
-- **Traco TMR 2-2411WI** — 9–36V in → isolated 5V/400mA, 1.5kVDC. Field-side supply for the MPPT VE.Direct digital-isolator link on the Electrons node. Buy **2** (1 + spare).
-- **Mean Well DDR-15G-5** — 9–18V in → 5V/3A (15W), DIN-rail. Central-enclosure DC-DC #1 (internal 5V rail: Nexus + 18650 charging + e-ink + LEDs + internal sensors). Already spec'd in `central-enclosure.md`. Buy **1–2**. Note: 18V input ceiling — depends on the rail TVS clamp (below) to survive load-dump transients above 18V.
+- **[Traco TSR 1-2433](https://no.mouser.com/ProductDetail/495-TSR-1-2433)** — 12V→3.3V switching regulator, SIP-3, one per ESP32-C6 node (Nav, Environment, Engine, Electrons). Standardised buck for all nodes (Argus decisions, 2026-06-05). Buy **~6** (4 in use + 2 spares).
+- **[Traco TMR 2-2411WI](https://no.mouser.com/ProductDetail/495-TMR-2-2411WI)** — 9–36V in → isolated 5V/400mA, 1.5kVDC. Field-side supply for the MPPT VE.Direct digital-isolator link on the Electrons node. Buy **2** (1 + spare).
+- **[Mean Well DDR-15G-5](https://no.mouser.com/ProductDetail/709-DDR-15G-5)** — 9–18V in → 5V/3A (15W), DIN-rail. Central-enclosure DC-DC #1 (internal 5V rail: Nexus + 18650 charging + e-ink + LEDs + internal sensors). Already spec'd in `central-enclosure.md`. Buy **1–2**. Note: 18V input ceiling — depends on the rail TVS clamp (below) to survive load-dump transients above 18V.
 
 ### Suggested — quality-critical
 

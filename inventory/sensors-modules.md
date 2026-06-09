@@ -45,7 +45,7 @@
 ## ESP32-C6-N16
 
 - Package: dev board
-- Qty: 2
+- Qty: 3
 - Notes: Single-core RISC-V 160MHz, 16MB flash. WiFi 6 (802.11ax), BLE 5, Thread/Zigbee (802.15.4). The 802.15.4 radio makes this the only board on the bench capable of Thread/Zigbee — relevant if mesh networking or Matter comes up. Newer chip, ecosystem still maturing vs C3/S3.
 
 ## ESP32-C3 SuperMini — HW-466AB (black)
@@ -88,7 +88,7 @@
 ## Opto-isolated TTL–RS-485 transceiver module — SN65HVD75 + B0505XT-1WR3
 
 - Package: breakout board, 4-pin logic header (VIN / TX / RX / GND)
-- Qty: 2
+- Qty: 5
 - Notes: Auto-direction 3.3V RS-485 transceiver (SN65HVD75) with an onboard B0505XT-1WR3 isolated 5V DC-DC giving a galvanically isolated bus side. **No DE/RE pin** — the module toggles the driver itself, freeing a GPIO (eModbus runs without an RTS pin). Datasheet no-load idle ~5 mA typ / 10 mA max at 5V + ~1 mA transceiver ≈ ~3–5 mA at 12V/node through a buck. VIN labelled **3–5V** — validate the isolated rail holds under load at 3.3V before committing. SN65HVD75 common-mode range −7 to +12V. Auto-direction turnaround timing must be validated at 9600 baud (driver hold-off after last bit). **This is the production RS-485 bus transceiver for Serenity Now! Argus** — replaces the non-isolated MAX3485 for ground-loop/backfeed protection. Argus needs 5 (4 nodes + Nexus); 2 on hand.
 
 ## Optocoupler board — PC817, 2-channel
