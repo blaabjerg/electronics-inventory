@@ -45,7 +45,7 @@
 ## ESP32-C6-N16
 
 - Package: dev board
-- Qty: 3
+- Qty: 4
 - Notes: Single-core RISC-V 160MHz, 16MB flash. WiFi 6 (802.11ax), BLE 5, Thread/Zigbee (802.15.4). The 802.15.4 radio makes this the only board on the bench capable of Thread/Zigbee — relevant if mesh networking or Matter comes up. Newer chip, ecosystem still maturing vs C3/S3.
 
 ## ESP32-C3 SuperMini — HW-466AB (black)
@@ -130,7 +130,7 @@
 ## INA226 current/power monitor breakout
 
 - Package: small breakout board, 0.1" headers
-- Qty: 2
+- Qty: 6
 - Notes: I²C, 16-bit resolution. Shunt resistor R100 (0.1Ω). Superior to INA219 — higher resolution, better accuracy, plus an alert/limit pin useful for overcurrent interrupts. I²C address configurable via A0/A1 pads (0x40–0x4F). Directly relevant to Argus Electrons node design.
 
 ## INA219 current/power monitor breakout
