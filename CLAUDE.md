@@ -41,18 +41,7 @@ Multiple related values can live under a shared section heading if that reads mo
 
 ## Intake workflow
 
-User describes new arrivals in natural language. Claude identifies the right category file, adds or updates entries, and logs the batch in `CHANGELOG.md`. Ask clarifying questions about package, value, or quantity if the description is ambiguous enough to matter. If the newly added components are listed in `WISHLIST.md`, update that as well.  
-
-## Changelog
-
-After every update session (not the initial population), append an entry to `CHANGELOG.md` in this format:
-
-```
-## YYYY-MM-DD — [brief description]
-- Added: [what was added]
-- Updated: [what quantities or notes changed]
-- Restructured: [any category or schema changes]
-```
+User describes new arrivals in natural language. Claude identifies the right category file, adds or updates entries, and logs the batch in the git commit. Ask clarifying questions about package, value, or quantity if the description is ambiguous enough to matter. If the newly added components are listed in `WISHLIST.md`, update that as well.  
 
 ## Design assistance
 
